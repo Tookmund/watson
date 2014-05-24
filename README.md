@@ -4,8 +4,8 @@ This is a simple puzzle game where you play as Dr. Watson and solve all the crim
 
 Tips
 ----
-* Due to the games odd parser only four characters of each word is read. 
-**If there are more than 4 character in each word bad things will happen as there is no error handling at the moment**
+* Due to the game's odd parser only four characters of each word is read. 
+**If there are more than 4 character in each word bad things will happen as there is no error handling at the moment!**
 This means that to "give sherlock evidence" (**NOT IMPLEMENTED YET!**) you would type 
-	give sher evid
+    give sher evid
 
