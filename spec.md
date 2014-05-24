@@ -1,8 +1,8 @@
 Specifications/Design Document
 ==============================
-(N.B. This is a draft, it is in no way final.)
-
 **WARNING: SPOILERS AHEAD!!**
+(N.B. This is a draft, it is in no way final.)
+(note: 1/0 means "a value of 1 or 0")
 
 Main idea
 ---------
@@ -16,19 +16,30 @@ Characters
 ----------
 * Sherlock holds all the answers, but he will not help you often
 * Inspector Lestrade will try to be helpful but he is often wrong
-* Strangers are unknown; they may help or harm you
+* Strangers are unknown; they may help or harm you (each is different in code but appear same in game)
 
 Implementation
 --------------
+* one function per command
+* another function for each different person
 * game struct holds room data puzzle solved status, other character status etc.
 * pointer to game passed command functions to modify data
 * input sorted by scanf, passed to game->command and game->arg[0-2]
-	* maybe 4 chars for command, 10 per arg??
+* 4 chars for command and arg
 
 The Game Struct
 ---------------
-* char[4] command = the command the player has entered
-* char[10][0-2] arg = array of 3 vals, arguments to game.command
+* char command[4] = the command the player has entered
+* char arg[4][2] = array of 2 vals, arguments to game->command
 * int area = the current area
+* int alive = 1/0 if player is alive
+* int newroom = 1/0 if this is first turn in this room
+* 
+* int inven[10][20] = The player's inventory, items are 10chars long (NOT GOING TO BE IMPLEMENTED ORIGINALLY, LATER ADD ON OR IF NEEDED IN LATER PUZZLES)
+
+The Character Struct
+--------------------
+* char desc[50] = description of person
+* void (\*convo) (gamestruct \*game) = pointer to the function that starts converstion
 
 
