@@ -1,0 +1,8 @@
+This is a text adventure.
+
+Commands:
+
+talk - Talk to someone
+look - Look at someone/something
+
+That's it as this is only a demo.
