@@ -1,5 +1,6 @@
 Watson
 ======
+### Status: Incomplete
 This is a simple puzzle game where you play as Dr. Watson and solve all the crimes that Sherlock is too lazy to solve himself (based on original books not tv show)
 
 Tips
