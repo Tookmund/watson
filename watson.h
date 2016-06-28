@@ -17,4 +17,6 @@ typedef struct characte-r{
 	char desc[50];
 	void (*convo) (gamestruct *game);
 } character
+typedef struct are-a {
+	
 #endif
